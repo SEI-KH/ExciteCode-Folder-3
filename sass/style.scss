@@ -1,3 +1,23 @@
 @use "./base/base";
 @use "./base/reset";
 @use "./global" as *;
+
+// header
+.header {
+  background-color: $gray;
+  padding-top: 40px;
+  padding-left: 60px;
+  @include mq("md") {
+    padding-top: 16px;
+    padding-left: 20px;
+  }
+}
+
+.header__title {
+  font-size: 44px;
+  font-weight: $bold;
+  color: $black;
+  @include mq("md") {
+    font-size: 20px;
+  }
+}
