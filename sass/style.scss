@@ -73,6 +73,60 @@
   }
 }
 
+// voice
+.voice {
+  padding-top: 120px;
+  padding-bottom: 150px;
+  background-color: $gray;
+  @include mq("md") {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+}
+
+.voice__list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(348px, 1fr));
+  column-gap: 18px;
+  row-gap: 40px;
+  @include mq("md") {
+    margin-top: 46px;
+  }
+  @include mq("sp") {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+.voice__item {
+  position: relative;
+  background-color: $white;
+  padding: 66px 40px 40px;
+  @include mq("md") {
+    padding: 50px 24px 24px;
+  }
+}
+
+.voice__img {
+  width: 60px;
+  height: auto;
+  border-radius: 9999px;
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  @include mq("md") {
+    width: 50px;
+    top: -16px;
+    left: 24px;
+  }
+}
+
+.voice__text {
+  font-size: 14px;
+  color: $black;
+  line-height: calc(26 / 14);
+}
+
 // 共通
 .inner {
   max-width: 1080px + 30px * 2; // 1080px + 30px(左右のパディング) * 2
@@ -84,4 +138,7 @@
   font-size: 60px;
   color: $black;
   text-align: center;
+  @include mq("md") {
+    font-size: 28px;
+  }
 }
