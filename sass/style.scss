@@ -92,6 +92,7 @@
   row-gap: 40px;
   @include mq("md") {
     margin-top: 46px;
+    grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
   }
   @include mq("sp") {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -125,6 +126,24 @@
   font-size: 14px;
   color: $black;
   line-height: calc(26 / 14);
+}
+
+// footer
+.footer {
+  padding: 30px 0;
+  @include mq("md") {
+    padding: 20px 0;
+  }
+}
+
+.footer__copyright {
+  font-size: 14px;
+  color: $black;
+  display: block;
+  text-align: center;
+  @include mq("md") {
+    font-size: 12px;
+  }
 }
 
 // 共通
